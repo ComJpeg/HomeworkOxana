@@ -1,0 +1,9 @@
+import math
+     
+list_of_numbers = []
+for i in range(3, 100000):
+    s = sum(math.factorial(int(x)) for x in str(i))
+    if s == i:
+        list_of_numbers.append(i)
+        
+print('Cумма всех чисел, каждое из которых равно сумме факториалов своих цифр: '+str(sum(list_of_numbers)))
