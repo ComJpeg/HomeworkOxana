@@ -1,0 +1,12 @@
+list_fibonacci=[]
+list_fibonacci.append(1)
+list_fibonacci.append(1)
+i = 1
+
+while len(str(list_fibonacci[i]))!=1000:
+    i+=1
+    number=list_fibonacci[i-1]+list_fibonacci[i-2]
+    list_fibonacci.append(number)
+    
+print('Порядковый номер первого члена Фибоначчи, содержащего 1000 цифр: '+str(i+1))
+
